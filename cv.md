@@ -1,4 +1,5 @@
 ## CV
+![SandzharSultanov](me.jpg)
 # Sandzhar Sultanov
 ### Contacts for communication
 * +998 (93) 085-40-66
