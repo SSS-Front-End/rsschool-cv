@@ -1,1 +1,1 @@
-# rsschool-cv
+https://SSS-Front-End.github.io/rsschool-cv/
