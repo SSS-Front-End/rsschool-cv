@@ -29,6 +29,8 @@ a {
     font-weight: 700;
     letter-spacing: 1px;
     color: #0C0C0E;
+    transition: .3s;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -45,10 +47,31 @@ body {
     font-weight: 400;
 }
 
+.title-books {
+    font-family: "Forum";
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    color: #000;
+    font-size: 20px;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.title-books::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 1px;
+    background-color: #BB945F;
+    bottom: 0;
+    left: 0;
+}
+
 .title {
     font-family: "Forum";
     font-weight: 400;
-    line-height: -40%;
+    line-height: 40px;
     letter-spacing: 2px;
     color: #0C0C0E;
     font-size: 40px;
@@ -62,7 +85,7 @@ body {
     width: 50px;
     height: 1px;
     background-color: #0C0C0E;
-    bottom: -23px;
+    bottom: -10px;
     left: 48.3%;
 }
 
@@ -70,7 +93,7 @@ body {
     font-family: "Inter";
     font-weight: 400;
     font-size: 20px;
-    line-height: -40%;
+    line-height: 40px;
     color: #000;
     text-align: center;
 }
@@ -225,6 +248,11 @@ body {
     border-radius: 50%;
 }
 
+.about__corusel__button_bg::after {
+    background: #BB945F;
+}
+
+
 .about__corusel__button::after:last-child{
     margin-right: 0;
     display: inline-block;
@@ -238,4 +266,150 @@ body {
 
 .about__corusel__button_bg {
     background: #bb955f00;
+}
+
+.favorites__desc {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 20px;
+    color: #000;
+    margin-top: 61px;
+    margin-bottom: 40px;
+}
+
+.favorites__form__inpt {
+    width: 17px;
+    height: 17px;
+    margin-right: 20px;
+    appearance: none;
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.favorites__form__inpt::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.favorites__form__inpt:checked::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #000;
+}
+
+.favorites__form__label {
+    margin-right: 90px;
+    font-family: "Inter";
+    font-size: 20px;
+}
+
+.favorites__form__label:nth-of-type(1){
+    font-weight: 700;
+}
+
+.favorites__form__box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.favorites__cards__card {
+    width: 550px;
+    padding: 15px 20px;
+    height: 555px;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.favorites__cards__box {
+    width: 590px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.favorites__cards__card__desc, .favorites__cards__card__span {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+
+.favorites__cards__card__desc {
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.favorites__cards__card__span {
+    text-transform: capitalize;
+}
+
+.favorites__cards__card__history {
+    color: #000;
+    line-height: 40px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 2px;
+    width: 355px;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.favorites__cards__img {
+    vertical-align: bottom;
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.favorites__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.favorites__cards__card__btn {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+}
+
+.own {
+    border: 1px solid #BB945F;
+    color: #BB945F;
+    width: 75px;
+    height: 30px;
+    border-radius: 2px;
+    background-color: #fff;
+    font-family: "Inter";
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: no-drop;
+}
+
+.favorites__cards_2 {
+    display: none;
+}
+
+.favorites__cards_3 {
+    display: none;
+}
+
+.favorites__cards_4 {
+    display: none;
 }
